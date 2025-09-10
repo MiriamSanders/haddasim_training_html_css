@@ -131,7 +131,7 @@ iframe {
   font-size: 2rem;
   color: #333;
   display: inline-block;
-  background-color: #f4f4f4;
+  background-color: #fff;
   padding: 0 15px;
   position: relative;
   z-index: 1;
@@ -148,4 +148,20 @@ iframe {
   height: 2px;
   background: #ddd;
   z-index: 0;
+}
+a.glightbox:focus, a.glightbox:active, a.glightbox:hover {
+  outline: none; /* Removes the blue outline */
+  box-shadow: none; /* Removes any box shadow used as focus indication */
+  border: none; /* Removes any border if applied */
+}
+a.glightbox {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+a.glightbox:focus, a.glightbox:hover {
+  outline: none;
+  border: none;
+  box-shadow: none;
 }

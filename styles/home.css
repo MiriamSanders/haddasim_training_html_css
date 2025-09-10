@@ -1,83 +1,42 @@
   html,
   body {
       margin: 0;
-      padding: 0;
+      padding-top: 0;
   }
 
   .carousel,
   .carousel-inner,
   .carousel-item {
       height: 100vh;
-      /* full viewport height */
   }
 
   .carousel-item img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      /* fill container without stretching */
+      
   }
 
   .carousel-caption {
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 20px;
-      border-radius: 10px;
-      max-width: 70%;
-  }
+    background: none; 
+    padding: 0;       
+    bottom: 10%;     
+    text-align: left;
+}
 
+.carousel-caption h5 {
+     color: #ffd54f;
+    font-size: 2rem;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7); 
+}
+
+.carousel-caption p {
+    color: #ffffff;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7); 
+}
   .carousel {
       margin-top: 0;
   }
-
-  .side-banner {
-      position: fixed;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 120px;
-      height: 300px;
-      background: linear-gradient(135deg, #2d5016, #8fbc8f);
-      border-radius: 10px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: white;
-      z-index: 999;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  }
-
-  .side-banner:hover {
-      transform: translateY(-50%) scale(1.05);
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
-  }
-
-  .side-banner.left {
-      left: 10px;
-  }
-
-  .side-banner.right {
-      right: 10px;
-  }
-
-  .banner-icon {
-      font-size: 2rem;
-      margin-bottom: 10px;
-  }
-
-  .banner-text {
-      font-size: 0.9rem;
-      font-weight: bold;
-      margin-bottom: 5px;
-  }
-
-  .banner-subtext {
-      font-size: 0.7rem;
-      opacity: 0.9;
-  }
-
   /* Info Boxes Section */
   .info-section {
       padding: 80px 0 !important;

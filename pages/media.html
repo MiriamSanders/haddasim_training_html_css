@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,22 +7,45 @@
     <link rel="stylesheet" href="/styles/media.css">
     <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Yellowstone Gallery</title>
 </head>
 
 <body>
-    <nav>
-        <img src="../images/logo.png" alt="logo" class="logo" />
-        <div class="nav-container">
-            <ul class="nav-menu">
-                <li><a href="home.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="media.html" class="nav-link">Media</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-                <li><a href="faq.html" class="nav-link">FAQ</a></li>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="home.html">
+            <img src="../images/logo.png" alt="logo" class="logo" />
+        </a>
+
+      
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+       
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="home.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="media.html" class="nav-link">Media</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="faq.html" class="nav-link">FAQ</a>
+                </li>
             </ul>
         </div>
-    </nav>
+    </div>
+</nav>
 
     <h1 class="title">Yellowstone National Park Media Gallery</h1>
     <p class="discription">
@@ -30,7 +53,7 @@
         and videos showcasing its stunning landscapes, diverse wildlife, and iconic geothermal features.
     </p>
 
-    <!-- ✅ Image Gallery (kept your div structure) -->
+   
     <div class="parent">
         <div class="image div1">
             <a href="../images/yellowstone1.jpg" data-lightbox="yellowstone" data-title="Yellowstone View 1">
@@ -151,9 +174,203 @@
             </div>
         </div>
     </footer>
-
-    <!-- ✅ Lightbox2 JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/media.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Yellowstone Gallery</title>
+</head>
+
+
+<body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="home.html">
+            <img src="../images/logo.png" alt="logo" class="logo" />
+        </a>
+
+
+        <!-- Hamburger toggler button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <!-- Menu items -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="home.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="media.html" class="nav-link">Media</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="faq.html" class="nav-link">FAQ</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <h1 class="title">Yellowstone National Park Media Gallery</h1>
+    <p class="discription">
+        Explore the breathtaking beauty of Yellowstone National Park through our collection of images
+        and videos showcasing its stunning landscapes, diverse wildlife, and iconic geothermal features.
+    </p>
+
+
+    <!-- Image Gallery with GLightbox -->
+    <div class="parent">
+        <div class="image div1">
+            <a href="../images/yellowstone1.jpg" class="glightbox" data-glightbox="title: Yellowstone View 1">
+                <img src="../images/yellowstone1.jpg" alt="yellowstone" />
+            </a>
+        </div>
+        <div class="image div2">
+            <a href="../images/yellowstone2.jpg" class="glightbox" data-glightbox="title: Yellowstone View 2">
+                <img src="../images/yellowstone2.jpg" alt="yellowstone" />
+            </a>
+        </div>
+        <div class="image div3">
+            <a href="../images/yellowstone3.jpg" class="glightbox" data-glightbox="title: Yellowstone View 3">
+                <img src="../images/yellowstone3.jpg" alt="yellowstone" />
+            </a>
+        </div>
+        <div class="image div4">
+            <a href="../images/yellowstone4.jpg" class="glightbox" data-glightbox="title: Yellowstone View 4">
+                <img src="../images/yellowstone4.jpg" alt="yellowstone" />
+            </a>
+        </div>
+        <div class="image div5">
+            <a href="../images/yellowstone5.jpg" class="glightbox" data-glightbox="title: Yellowstone View 5">
+                <img src="../images/yellowstone5.jpg" alt="yellowstone" />
+            </a>
+        </div>
+        <div class="image div6">
+            <a href="../images/yellowstone6.jpg" class="glightbox" data-glightbox="title: Yellowstone View 6">
+                <img src="../images/yellowstone6.jpg" alt="yellowstone" />
+            </a>
+        </div>
+        <div class="image div7">
+            <a href="../images/yellowstone11.jpg" class="glightbox" data-glightbox="title: Yellowstone View 7">
+                <img src="../images/yellowstone11.jpg" alt="yellowstone" />
+            </a>
+        </div>
+        <div class="image div8">
+            <a href="../images/yellowstone12.jpg" class="glightbox" data-glightbox="title: Yellowstone View 8">
+                <img src="../images/yellowstone12.jpg" alt="yellowstone" />
+            </a>
+        </div>
+        <div class="image div9">
+            <a href="../images/yellowstone7.jpg" class="glightbox" data-glightbox="title: Yellowstone View 9">
+                <img src="../images/yellowstone7.jpg" alt="yellowstone" />
+            </a>
+        </div>
+        <div class="image div10">
+            <a href="../images/yellowstone10.jpg" class="glightbox" data-glightbox="title: Yellowstone View 10">
+                <img src="../images/yellowstone10.jpg" alt="yellowstone" />
+            </a>
+        </div>
+        <div class="image div11">
+            <a href="../images/yellowstone9.jpg" class="glightbox" data-glightbox="title: Yellowstone View 11">
+                <img src="../images/yellowstone9.jpg" alt="yellowstone" />
+            </a>
+        </div>
+        <div class="image div12">
+            <a href="../images/yellowstone8.jpg" class="glightbox" data-glightbox="title: Yellowstone View 12">
+                <img src="../images/yellowstone8.jpg" alt="yellowstone" />
+            </a>
+        </div>
+        <div class="image div13">
+            <a href="../images/yellowstone13.jpg" class="glightbox" data-glightbox="title: Yellowstone View 13">
+                <img src="../images/yellowstone13.jpg" alt="yellowstone" />
+            </a>
+        </div>
+        <div class="image div14">
+            <a href="../images/yellowstone13.jpg" class="glightbox" data-glightbox="title: Yellowstone View 14">
+                <img src="../images/yellowstone13.jpg" alt="yellowstone" />
+            </a>
+        </div>
+    </div>
+
+
+    <div class="section-title">
+        <h2>Videos</h2>
+    </div>
+
+
+    <div class="videos">
+        <iframe width="914" height="514" src="https://www.youtube.com/embed/5txppbrbS4w"
+            title="Steamboat Geyser Eruption September 17, 2018" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="914" height="514" src="https://www.youtube.com/embed/KE6PRDQerVc"
+            title="InDepth: Waters of Yellowstone" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <img src="../images/logo.png" alt="logo" class="footer-logo" />
+                <div class="footer-section">
+                    <h3>Yellowstone National Park</h3>
+                    <p>America's first national park, established in 1872. Discover the natural wonders and rich history
+                        of this iconic destination.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="media.html">Media</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>Yellowstone National Park<br>
+                        Wyoming, Montana, Idaho<br>
+                        Email: info@yellowstone.gov<br>
+                        Phone: (307) 344-7381</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Yellowstone National Park Project. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const lightbox = GLightbox({});
+    </script>
+</body>
+
 
 </html>

@@ -1,60 +1,94 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    background-image: url('../images/yellowstone13.jpg');
-    margin: 0;
-    padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  background-image: url('../images/yellowstone13.jpg');
+  background-size: cover;
+  margin: 0;
+  padding: 20px;
+  color: #161616;
 }
-body::before {
-    content: "";
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background-color: rgba(255, 248, 240, 0.5); /* soft overlay to make text readable */
-    z-index: -1;
-}
-
 
 h1 {
-    text-align: center;
-    color: #333;
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
 }
-
 
 .accordion {
-    width: 70%;
-    margin: 0 auto;
+  width: 70%;
+  margin: 0 auto;
 }
 
-
-.accordion-item {
-    background: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    overflow: hidden;
+details {
+  background: #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  transition: all 0.3s ease;
 }
 
-
-.accordion-question {
-    background: #ffe082;
-    height: 10vh;
-    padding: 15px;
-    cursor: pointer;
-    font-weight: bold;
+summary {
+  background: #ffd54f;
+  padding: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s ease;
 }
 
+summary::-webkit-details-marker {
+  display: none;
+}
 
-.accordion-answer {
+details[open] summary {
+  background: #ffca28;
+}
+
+/* Arrow icon using CSS */
+summary::after {
+  content: '▸';
+  font-size: 1.2rem;
+  transition: transform 0.5s ease;
+}
+
+details[open] summary::after {
+  transform: rotate(90deg);
+}
+.accordion-content {
   max-height: 0;
   overflow: hidden;
   opacity: 0;
-  transition: max-height 0.5s ease, opacity 0.5s ease;
+  transition: max-height 0.4s ease, opacity 0.3s;
+  padding: 0 20px;
 }
-
-.accordion-item.active .accordion-answer {
-  max-height: 200px; 
+details[open] .accordion-content {
+  max-height: 300px;  /* Large enough for single answer */
   opacity: 1;
+  padding: 15px 20px;
 }
 
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    max-height: 0;
+    transform: scaleY(0);
+  }
+  100% {
+    opacity: 1;
+    max-height: 1000px; /* arbitrary large value */
+    transform: scaleY(1);
+  }
+}
 
+.accordion-content > p {
+  padding: 15px 20px;
+  background: #fff8e1;
+  line-height: 1.5;
+  font-size: 0.95rem;
+  margin: 0;
+}
