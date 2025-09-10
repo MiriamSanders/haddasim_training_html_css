@@ -1,0 +1,247 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/faq.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <img src="../images/logo.png" alt="logo" class="logo" />
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="home.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="media.html" class="nav-link">Media</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="faq.html" class="nav-link">FAQ</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <h1>Yellowstone National Park FAQ</h1>
+    <div class="accordion">
+        <div class="accordion-item">
+            <div class="accordion-question">Where is Yellowstone National Park located?</div>
+            <div class="accordion-answer">It is located in Wyoming, Montana, and Idaho, mostly in Wyoming.</div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-question">Why is Yellowstone famous?</div>
+            <div class="accordion-answer">It's known for geysers, hot springs, wildlife, and being the first national
+                park.</div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-question">What is Old Faithful?</div>
+            <div class="accordion-answer">Old Faithful is a famous geyser that erupts about every 60–110 minutes.</div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-question">When is the best time to visit Yellowstone?</div>
+            <div class="accordion-answer">Late spring or early fall is best for fewer crowds and good wildlife viewing.
+            </div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-question">Is it safe to touch hot springs?</div>
+            <div class="accordion-answer">No, they can be extremely hot and dangerous. Always stay on boardwalks.</div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <img src="../images/logo.png" alt="logo" class="footer-logo" />
+                <div class="footer-section">
+                    <h3>Yellowstone National Park</h3>
+                    <p>America's first national park, established in 1872. Discover the natural wonders and rich history
+                        of this iconic destination.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="media.html">Media</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>Yellowstone National Park<br>
+                        Wyoming, Montana, Idaho<br>
+                        Email: info@yellowstone.gov<br>
+                        Phone: (307) 344-7381</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Yellowstone National Park Project. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const items = document.querySelectorAll('.accordion-item');
+        items.forEach(item => {
+            item.querySelector('.accordion-question').addEventListener('click', () => {
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yellowstone FAQ</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  background-image: url('../images/yellowstone13.jpg');
+  background-size: cover;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.accordion {
+  width: 70%;
+  margin: 0 auto;
+}
+
+details {
+  background: #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+summary {
+  background: #ffd54f;
+  padding: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] summary {
+  background: #ffca28;
+}
+
+/* Arrow icon using CSS */
+summary::after {
+  content: '▸';
+  font-size: 1.2rem;
+  transition: transform 0.5s ease;
+}
+
+details[open] summary::after {
+  transform: rotate(90deg);
+}
+
+/* Animate the content */
+.accordion-content {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transform-origin: top;
+}
+
+/* Animate using details[open] */
+details[open] .accordion-content {
+  animation: slideDown 0.6s forwards;
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    max-height: 0;
+    transform: scaleY(0);
+  }
+  100% {
+    opacity: 1;
+    max-height: 1000px; /* arbitrary large value */
+    transform: scaleY(1);
+  }
+}
+
+.accordion-content > p {
+  padding: 15px 20px;
+  background: #fff8e1;
+  line-height: 1.5;
+  font-size: 0.95rem;
+  margin: 0;
+}
+</style>
+</head>
+<body>
+<h1>Yellowstone National Park FAQ</h1>
+<div class="accordion">
+  <details>
+    <summary>Where is Yellowstone National Park located?</summary>
+    <div class="accordion-content">
+      <p>Yellowstone National Park is located primarily in Wyoming, but it also stretches into Montana and Idaho. The park features over 2 million acres of forests, lakes, and geothermal wonders.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Why is Yellowstone famous?</summary>
+    <div class="accordion-content">
+      <p>Yellowstone is famous for its geysers, hot springs, wildlife, and stunning landscapes. It was the first national park in the world, established in 1872 to preserve its natural beauty.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>What is Old Faithful?</summary>
+    <div class="accordion-content">
+      <p>Old Faithful is a highly predictable geyser that erupts roughly every 60–110 minutes, shooting boiling water high into the air. It is one of the park's most iconic attractions.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>When is the best time to visit Yellowstone?</summary>
+    <div class="accordion-content">
+      <p>The best time to visit Yellowstone is late spring or early fall when the weather is mild, wildlife is active, and crowds are smaller. Winter visits offer snow sports and fewer tourists.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Is it safe to touch hot springs?</summary>
+    <div class="accordion-content">
+      <p>No, touching hot springs is extremely dangerous. Some springs can reach temperatures over 200°F (93°C). Always stay on designated boardwalks and follow park safety guidelines.</p>
+    </div>
+  </details>
+</div>
+</body>
+</html>
