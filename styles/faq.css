@@ -10,7 +10,7 @@
 
  h1 {
      text-align: center;
-     color: #333;
+     color: #ffd54f;
      margin-bottom: 30px;
      font-size: 2.5rem;
      font-weight: bold;
@@ -19,7 +19,7 @@
 
  .faq-container {
      width: 800px;
-     margin: 0 auto;
+     margin: 10px auto;
      background: rgba(255, 255, 255, 0.95);
      border-radius: 15px;
      padding: 30px;
@@ -83,6 +83,7 @@
      .faq-container {
          margin: 10px;
          padding: 20px;
+         max-width: 90vw;
      }
 
      h1 {

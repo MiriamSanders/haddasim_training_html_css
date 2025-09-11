@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'MyFont';
+  src: url('fonts/MyFont-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html,
 body {
   height: 100%;
@@ -5,10 +12,12 @@ body {
   padding: 0;
   overflow-x: hidden;
   text-align: center;
-  font-family: Arial, sans-serif;
+  font-family: "MyFont", sans-serif;
+  background: linear-gradient(135deg, #f4f1e8 0%, #e8dcc0 100%);
 }
-body{
-  display:flex;
+
+body {
+  display: flex;
   flex-direction: column;
 }
 
@@ -92,7 +101,7 @@ img {
 }
 
 h1 {
-  font-family: 'Georgia', serif;
+  padding: 20px;
   font-size: 2.5rem;
   color: #2c3e2d;
   text-align: center;
@@ -155,33 +164,36 @@ iframe {
 }
 
 /* Simple responsive design - mobile only */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .parent {
     height: auto;
-    grid-template-columns: 1fr; /* Single column */
-    grid-template-rows: none;   /* Let rows auto-size */
+    grid-template-columns: 1fr;
+    /* Single column */
+    grid-template-rows: none;
+    /* Let rows auto-size */
     grid-auto-rows: minmax(150px, auto);
   }
-  
+
   /* Make all divs span the single column */
-  .parent > div {
-    grid-area: unset; /* Remove custom placement */
+  .parent>div {
+    grid-area: unset;
+    /* Remove custom placement */
   }
-  
+
   /* Stack videos in single column */
   .videos {
     flex-direction: column;
     align-items: center;
   }
-  
+
   /* Stack photos in single column */
   .photo-gallery {
     flex-direction: column;
     align-items: center;
   }
-  
+
   iframe {
-    max-width: 90%; /* Make videos fit better */
+    max-width: 90%;
+    /* Make videos fit better */
   }
 }
-

@@ -15,16 +15,16 @@ body {
     flex-direction: column;
 }
 
-/* Navigation Bar */
+
  nav {
-    background: linear-gradient(135deg, #2c3e2d, #1a2b1a);
+    /* background: linear-gradient(135deg, #2c3e2d, #1a2b1a); */
+    background:#2c3e2d;
     padding: 0;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-    max-height: 80px;
 }
 
 
@@ -47,16 +47,10 @@ body {
 }
 .navbar-nav {
     justify-content: space-evenly;
-    background: linear-gradient(135deg, #2c3e2d, #1a2b1a);
-    margin: 0; /* add background for mobile dropdown */ /* optional: adds padding inside the dropdown */
+    background:  #2c3e2d;
+    margin: 0; 
 }
 
-@media (min-width: 769px) {
-    .navbar-nav {
-        background: none; /* remove background on desktop */
-        padding: 0;
-    }
-}
 
 .nav-link {
     display: block;
@@ -69,9 +63,6 @@ body {
     position: relative;
     overflow: hidden;
 }
-
-
-
 
 .nav-link::after {
     content: '';
