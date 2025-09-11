@@ -118,6 +118,7 @@
                         <li><a href="media.html">Media</a></li>
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="trivia.html">Trivia</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -142,8 +143,6 @@
     let current = 0;
     let score = 0;
     let answered = false;
-
-    // Handle clicks on answers
     document.querySelectorAll('input[type="radio"]').forEach(input => {
         input.addEventListener('change', (e) => {
             if (answered) return;
@@ -166,15 +165,7 @@
 
     nextBtn.addEventListener('click', () => {
         const selected = questions[current].querySelector('input:checked');
-        if (!selected) {
-            alert('Please select an answer!');
-            return;
-        }
-
-        // Add to score
         score += parseInt(selected.value);
-
-        // Move to next question
         questions[current].style.display = 'none';
         current++;
         answered = false;
