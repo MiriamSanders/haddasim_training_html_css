@@ -6,11 +6,11 @@
 }
 
 body {
-     font-family: 'MyFont', sans-serif;
+    font-family: 'MyFont', sans-serif;
     background-color: #f4f4f4;
-    background-image: url('../images/yellowstone9.jpg'); 
+    background-image: url('../images/yellowstone9.jpg');
     background-size: cover;
-    background-attachment: fixed; 
+    background-attachment: fixed;
     margin: 0;
     padding: 20px;
     display: flex;
@@ -21,41 +21,43 @@ body {
 body::before {
     content: "";
     position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-color: rgba(255, 248, 240, 0.767);
     z-index: -1;
 }
 
 h1 {
-  text-align: center;
-  font-size: 2.8rem;
-  color: #1a2b1a;
-  margin-bottom: 3rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-  position: relative;
-  font-weight: 300;
-  letter-spacing: 1px;
+    text-align: center;
+    font-size: 2.8rem;
+    color: #1a2b1a;
+    margin-bottom: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    font-weight: 300;
+    letter-spacing: 1px;
 }
 
 h1::after {
-  content: '';
-  display: block;
-  width: 120px;
-  height: 3px;
-  background: linear-gradient(90deg, #8b4513, #daa520);
-  margin: 1.5rem auto;
-  border-radius: 2px;
+    content: '';
+    display: block;
+    width: 120px;
+    height: 3px;
+    background: linear-gradient(90deg, #8b4513, #daa520);
+    margin: 1.5rem auto;
+    border-radius: 2px;
 }
 
 form {
     max-width: 450px;
     margin: 0 auto 40px auto;
     padding: 25px 30px;
-    background: rgba(255, 255, 255, 0.95); 
+    background: rgba(255, 255, 255, 0.95);
     border: 2px solid #daa520;
     border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -66,7 +68,8 @@ label {
     color: #2c3e2d;
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
     padding: 12px;
     margin-bottom: 20px;
@@ -76,7 +79,8 @@ input, textarea {
     transition: border 0.3s ease, box-shadow 0.3s ease;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     border-color: #daa520;
     box-shadow: 0 0 5px rgba(218, 165, 32, 0.4);
     outline: none;
@@ -98,18 +102,21 @@ input:focus, textarea:focus {
     background-color: #3e5a41;
     transform: translateY(-2px);
 }
-.thankyou{
+
+.thankyou {
     text-align: center;
     font-size: 1.2rem;
     color: #2c3e2d;
     margin-top: 20px;
 }
-.back-to-home{
+
+.back-to-home {
     text-align: center;
     font-size: 1.2rem;
     color: #2c3e2d;
     margin-top: 20px;
 }
+
 @media (max-width: 500px) {
     form {
         padding: 20px;
