@@ -54,11 +54,11 @@
         </nav>
     </header>
 
-    <!-- Carousel -->
+
     <div class="mobile-carousel d-block d-md-none position-relative w-100">
         <img src="../images/yellowstone11.jpg" alt="Old Faithful" class="w-100">
 
-        <!-- Caption overlay -->
+
         <div class="mobile-caption position-absolute bottom-0 start-0 p-3 text-white">
             <h5>Old Faithful</h5>
             <p>Yellowstone's famous geyser erupts roughly every 60–110 minutes.</p>
@@ -110,7 +110,14 @@
         </button>
     </div>
 
-    <!-- Info Boxes Section -->
+    <div id="sideAd" data-aos="fade-left" data-aos-duration="1000">
+        <button class="closeBtn" onclick="closeAd()">X</button>
+        <a href="https://www.nps.gov/yell/learn/nature/hydrothermal-systems.htm" target="_blank" class="adLink">
+            <div class="adText bottomText">Book Now</div>
+            <img src="../images/ad.png" alt="Ad">
+        </a>
+    </div>
+
     <section class="info-section">
         <div class="info-container">
             <div class="row">
@@ -284,6 +291,10 @@
             duration: 1000,
             offset: 100
         });
+        function closeAd() {
+            const ad = document.getElementById('sideAd');
+            ad.style.display = 'none';
+        }
     </script>
 </body>
 
