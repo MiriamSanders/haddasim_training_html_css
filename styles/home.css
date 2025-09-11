@@ -2,6 +2,7 @@
   body {
       margin: 0;
       padding-top: 0;
+      overflow-x: hidden;
   }
 
   .carousel,
@@ -39,7 +40,6 @@
       margin-top: 0;
   }
 
-  /* Info Boxes Section */
   .info-section {
       padding: 80px 0 !important;
       background: linear-gradient(135deg, #f5f5dc, #e6e6fa) !important;
@@ -147,6 +147,7 @@
   }
 
   .row {
+    padding: 20px;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(13, 1fr);
@@ -154,11 +155,7 @@
       grid-row-gap: 8px;
   }
 
-  /* Responsive */
   @media (max-width: 768px) {
-      .side-banner {
-          display: none;
-      }
 
       .info-box {
           margin: 15px 0;
@@ -171,8 +168,6 @@
       .row {
           height: auto;
           grid-template-columns: 1fr;
-          /* Single column */
           grid-template-rows: none;
-          /* Let rows auto-size */
       }
   }

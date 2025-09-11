@@ -1,49 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/styles/media.css">
-  <link rel="stylesheet" href="../styles/footer.css">
+  <link rel="stylesheet" href="../styles/global.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Fancybox CSS -->
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
-  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+  <link rel="icon" href="../images/logo.png" type="image/png">
   <title>Yellowstone Gallery</title>
 </head>
 
 <body>
   <header>
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="home.html">
-        <img src="../images/logo.png" alt="logo" class="logo" />
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a href="home.html" class="nav-link active">Home</a></li>
-          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="media.html" class="nav-link">Media</a></li>
-          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-          <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="home.html">
+          <img src="../images/logo.png" alt="logo" class="logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a href="home.html" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="media.html" class="nav-link">Media</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
   </header>
   <h1 class="title">Yellowstone National Park Media Gallery</h1>
   <p class="discription">
     Explore the breathtaking beauty of Yellowstone National Park through our collection of images
     and videos showcasing its stunning landscapes, diverse wildlife, and iconic geothermal features.
   </p>
-
-  <!-- Image Gallery with Fancybox -->
   <div class="parent">
     <div class="image div1">
       <a data-fancybox="gallery" data-caption="Yellowstone View 1" href="../images/yellowstone1.jpg">
@@ -111,8 +107,8 @@
       </a>
     </div>
     <div class="image div14">
-      <a data-fancybox="gallery" data-caption="Yellowstone View 14" href="../images/yellowstone13.jpg">
-        <img src="../images/yellowstone13.jpg" alt="yellowstone" />
+      <a data-fancybox="gallery" data-caption="Yellowstone View 14" href="../images/yellowstone3.jpg">
+        <img src="../images/yellowstone3.jpg" alt="yellowstone" />
       </a>
     </div>
   </div>
@@ -122,17 +118,15 @@
   </div>
 
   <div class="videos">
-    <iframe width="914" height="514" src="https://www.youtube.com/embed/5txppbrbS4w"
-      title="Steamboat Geyser Eruption September 17, 2018" frameborder="0"
+    <iframe src="https://www.youtube.com/embed/5txppbrbS4w" title="Steamboat Geyser Eruption September 17, 2018"
+      frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <iframe width="914" height="514" src="https://www.youtube.com/embed/KE6PRDQerVc"
-      title="InDepth: Waters of Yellowstone" frameborder="0"
+    <iframe src="https://www.youtube.com/embed/KE6PRDQerVc" title="InDepth: Waters of Yellowstone" frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
 
-  <!-- Footer -->
   <footer>
     <div class="footer-container">
       <div class="footer-content">
@@ -166,7 +160,6 @@
     </div>
   </footer>
 
-  <!-- JS Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
   <script>
@@ -180,4 +173,5 @@
     });
   </script>
 </body>
+
 </html>
