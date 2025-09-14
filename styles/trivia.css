@@ -54,12 +54,12 @@ h1::after {
     color: #333;
 }
 
-/* Hide radio buttons */
+
 input[type="radio"] {
     display: none;
 }
 
-/* Style labels as cards */
+
 label {
     display: block;
     background: #fff8e1;
@@ -78,7 +78,6 @@ label:hover {
     transform: scale(1.02);
 }
 
-/* Feedback styling */
 .feedback {
     font-weight: bold;
     margin-top: 10px;

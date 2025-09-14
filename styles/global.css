@@ -80,13 +80,13 @@ nav {
 }
 
 
-/* Main content area */
+
 .main-content {
     flex: 1;
     padding: 2rem;
 }
 
-/* Footer Styles */
+
 footer {
     background: linear-gradient(135deg, #1a2b1a, #2c3e2d);
     color: #ffffff;
